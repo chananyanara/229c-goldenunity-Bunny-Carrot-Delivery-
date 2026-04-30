@@ -10,10 +10,10 @@ public class Carrot : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // ถ้าแครอทชน "พื้น" หรือ "กำแพง" ให้มันค่อยๆ หายไป หรือทำลายตัวเอง
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Basket"))
         {
             // ทำลายแครอททิ้งเมื่อชนพื้น (จะได้ไม่เกะกะ)
-           // Destroy(gameObject, 1f);
+           Destroy(gameObject, 1f);
         }
     }
 }

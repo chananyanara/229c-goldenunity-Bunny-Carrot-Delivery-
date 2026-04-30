@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Ground
+  - Basket
+  - Carrot
   layers:
   - Default
   - TransparentFX
@@ -12,7 +15,7 @@ TagManager:
   - Water
   - UI
   - Player
-  - 
+  - carrot
   - 
   - 
   - 
@@ -61,6 +64,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1585677985
+    locked: 0
+  - name: carrot
+    uniqueID: 131223315
     locked: 0
   m_RenderingLayers:
   - Default

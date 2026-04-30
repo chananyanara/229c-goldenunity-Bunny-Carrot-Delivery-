@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -353262101041760215}
   m_Layer: 6
   m_Name: carrot
-  m_TagString: Untagged
+  m_TagString: Carrot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -10,7 +10,7 @@ public class BunnyLauncher : MonoBehaviour
 
     public float m = 1.0f;          // มวล
 
-    public float a_multiplier = 10f; // ตัวคูณความแรง (ปรับเพิ่ม-ลดใน Inspector ได้)
+    public float a_multiplier = 10f; // ตัวคูณความแรง
 
     private Vector2 startPos;
 
@@ -18,7 +18,7 @@ public class BunnyLauncher : MonoBehaviour
 
     {
 
-        // 1. กดเมาส์ปุ๊บ เก็บจุดเริ่มต้นทันที
+        // 1. กดเมาส์เก็บจุดเริ่มต้น
 
         if (Input.GetMouseButtonDown(0))
 
@@ -28,29 +28,45 @@ public class BunnyLauncher : MonoBehaviour
 
         }
 
-        // 2. ปล่อยเมาส์ปุ๊บ คำนวณจุดสุดท้ายแล้ว "ยิง"
+        // 2. ปล่อยเมาส์เพื่อยิง
 
         if (Input.GetMouseButtonUp(0))
 
         {
 
-            Vector2 endPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            // --- เช็คก่อนว่ากระสุนใน GameManager เหลือไหม ---
 
-            // คำนวณเวกเตอร์การลาก (ลากถอยหลังไปทางไหน พุ่งไปทางตรงข้าม)
+            if (GameManager.Instance != null && GameManager.Instance.ammo > 0)
 
-            Vector2 dragVector = startPos - endPos; 
+            {
 
-            // --- ส่วนที่ทำให้ ลากไกล=แรง / ลากใกล้=เบา ---
+                Vector2 endPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-            float acceleration = dragVector.magnitude * a_multiplier;
+                Vector2 dragVector = startPos - endPos; 
 
-            Vector2 direction = dragVector.normalized;
+                float acceleration = dragVector.magnitude * a_multiplier;
 
-            // สูตร F = ma
+                Vector2 direction = dragVector.normalized;
 
-            Vector2 force = direction * (m * acceleration);
+                // สูตร F = ma
 
-            Shoot(force);
+                Vector2 force = direction * (m * acceleration);
+
+                Shoot(force);
+
+                // --- สั่งลดจำนวนแครอทใน GameManager ---
+
+                GameManager.Instance.UseAmmo();
+
+            }
+
+            else
+
+            {
+
+                Debug.Log("Out of Carrots!");
+
+            }
 
         }
 
@@ -72,8 +88,6 @@ public class BunnyLauncher : MonoBehaviour
 
             {
 
-                // ใช้ Impulse เพื่อให้พุ่งออกไปทันที
-
                 rb.AddForce(forceVector, ForceMode2D.Impulse);
 
             }
@@ -83,4 +97,3 @@ public class BunnyLauncher : MonoBehaviour
     }
 
 }
-
