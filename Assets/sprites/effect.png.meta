@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: e8a727d23c1497f4cbecef6f65ef9c03
+guid: 42a3638d7f8d22a47b4359631c9e3982
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -286529453502646654
-    second: Winter_entities (16 x 16)_0
+      213: -9119609629918001555
+    second: effect_0
   - first:
-      213: 1056089282199751628
-    second: Winter_entities (16 x 16)_1
+      213: -43670912784538107
+    second: effect_1
   - first:
-      213: -4103794020922407533
-    second: Winter_entities (16 x 16)_2
+      213: -7781146665146789375
+    second: effect_2
   - first:
-      213: 177118403161757845
-    second: Winter_entities (16 x 16)_3
-  - first:
-      213: -3695280694001120319
-    second: Winter_entities (16 x 16)_4
-  - first:
-      213: 3575770927227469464
-    second: Winter_entities (16 x 16)_5
+      213: -4455475705303005430
+    second: effect_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -66,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -111,137 +105,106 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Winter_entities (16 x 16)_0
+      name: effect_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 47
-        width: 44
-        height: 46
+        x: 0
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 286b94aeafa060cf0800000000000000
-      internalID: -286529453502646654
+      spriteID: d66818efb53a07180800000000000000
+      internalID: -9119609629918001555
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Winter_entities (16 x 16)_1
+      name: effect_1
       rect:
         serializedVersion: 2
-        x: 82
-        y: 47
-        width: 44
-        height: 46
+        x: 16
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ccb0d945b9bf7ae00800000000000000
-      internalID: 1056089282199751628
+      spriteID: 506e5744989d46ff0800000000000000
+      internalID: -43670912784538107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Winter_entities (16 x 16)_2
+      name: effect_2
       rect:
         serializedVersion: 2
-        x: 144
-        y: 79
-        width: 49
-        height: 18
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3954c8fa4156c07c0800000000000000
-      internalID: -4103794020922407533
+      spriteID: 102d5b69550d30490800000000000000
+      internalID: -7781146665146789375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Winter_entities (16 x 16)_3
+      name: effect_3
       rect:
         serializedVersion: 2
-        x: 156
-        y: 47
-        width: 41
-        height: 18
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 59814afcf30457200800000000000000
-      internalID: 177118403161757845
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Winter_entities (16 x 16)_4
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 15
-        width: 18
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1cb44b889c9b7bcc0800000000000000
-      internalID: -3695280694001120319
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Winter_entities (16 x 16)_5
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 15
-        width: 26
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 89eff8b86b0bf9130800000000000000
-      internalID: 3575770927227469464
+      spriteID: a070800c378fa22c0800000000000000
+      internalID: -4455475705303005430
       vertices: []
       indices: 
       edges: []
@@ -250,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8fd98fd552492704789ca42a102a7c3b
     internalID: 0
     vertices: []
     indices: 
@@ -258,14 +221,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Winter_entities (16 x 16)_0: -286529453502646654
-      Winter_entities (16 x 16)_1: 1056089282199751628
-      Winter_entities (16 x 16)_2: -4103794020922407533
-      Winter_entities (16 x 16)_3: 177118403161757845
-      Winter_entities (16 x 16)_4: -3695280694001120319
-      Winter_entities (16 x 16)_5: 3575770927227469464
+      effect_0: -9119609629918001555
+      effect_1: -43670912784538107
+      effect_2: -7781146665146789375
+      effect_3: -4455475705303005430
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
