@@ -63,8 +63,7 @@ public class GameManager : MonoBehaviour
         if (currentScore >= scoreToWin)
 
         {
-
-            // ระบบเช็คด่านเพื่อส่งไป Scene ถัดไป
+            
 
             string currentSceneName = SceneManager.GetActiveScene().name;
 
@@ -72,7 +71,7 @@ public class GameManager : MonoBehaviour
 
             {
 
-                SceneManager.LoadScene("Level2Scene"); // จบด่าน 1 ไปด่าน 2
+                SceneManager.LoadScene("Level2Scene"); 
 
             }
 
@@ -80,7 +79,7 @@ public class GameManager : MonoBehaviour
 
             {
 
-                SceneManager.LoadScene("WinScene");    // จบด่าน 2 ไปหน้าชนะ
+                SceneManager.LoadScene("WinScene");  
 
             }
 

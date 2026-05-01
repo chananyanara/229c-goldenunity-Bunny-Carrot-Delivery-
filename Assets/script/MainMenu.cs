@@ -13,9 +13,7 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("GameScene");
 
     }
-
-    // เพิ่มฟังก์ชันนี้สำหรับปุ่ม Credit
-
+    
     public void GoToCredit()
 
     {
@@ -23,8 +21,7 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("CreditScene");
 
     }
-
-    // เพิ่มฟังก์ชันนี้สำหรับปุ่ม Back ในหน้า Credit ให้กลับมาหน้า Menu
+    
 
     public void GoToMenu()
 
