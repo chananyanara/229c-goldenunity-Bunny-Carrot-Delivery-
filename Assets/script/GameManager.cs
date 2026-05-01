@@ -12,17 +12,17 @@ public class GameManager : MonoBehaviour
 
     [Header("Settings")]
 
-    public int ammo = 10;        // จำนวนแครอทที่มี
+    public int ammo = 10;        
 
-    public int scoreToWin = 3;   // คะแนนที่ต้องได้
+    public int scoreToWin = 3;   
 
     private int currentScore = 0;
 
     [Header("UI References")]
 
-    public Text scoreText;       // ลาก Text คะแนนมาใส่
+    public Text scoreText;       
 
-    public Text ammoText;        // ลาก Text จำนวนแครอทมาใส่
+    public Text ammoText;        
 
     private void Awake()
 
@@ -33,8 +33,6 @@ public class GameManager : MonoBehaviour
         UpdateUI();
 
     }
-
-    // เรียกใช้ตอนกดยิง
 
     public void UseAmmo()
 
@@ -48,15 +46,11 @@ public class GameManager : MonoBehaviour
 
         {
 
-            // ถ้าแครอทหมด ให้รอ 3 วินาทีเผื่อลูกสุดท้ายกำลังบิน แล้วค่อยแพ้
-
             Invoke("CheckLoseCondition", 3.0f);
 
         }
 
     }
-
-    // เรียกใช้ตอนแครอทลงตะกร้า
 
     public void AddScore()
 
@@ -70,7 +64,25 @@ public class GameManager : MonoBehaviour
 
         {
 
-            SceneManager.LoadScene("WinScene"); // ชื่อ Scene ต้องตรงกับที่ตั้งไว้
+            // ระบบเช็คด่านเพื่อส่งไป Scene ถัดไป
+
+            string currentSceneName = SceneManager.GetActiveScene().name;
+
+            if (currentSceneName == "GameScene") 
+
+            {
+
+                SceneManager.LoadScene("Level2Scene"); // จบด่าน 1 ไปด่าน 2
+
+            }
+
+            else if (currentSceneName == "Level2Scene")
+
+            {
+
+                SceneManager.LoadScene("WinScene");    // จบด่าน 2 ไปหน้าชนะ
+
+            }
 
         }
 
@@ -94,7 +106,7 @@ public class GameManager : MonoBehaviour
 
         {
 
-            SceneManager.LoadScene("LoseScene"); // ชื่อ Scene ต้องตรงกับที่ตั้งไว้
+            SceneManager.LoadScene("LoseScene");
 
         }
 
